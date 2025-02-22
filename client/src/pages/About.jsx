@@ -12,12 +12,12 @@ export const About = () => {
             <p>
               On this blog, you'll find weekly articles and tutorials on topics
               such as web development, software engineering, and programming
-              languages. Sahand is always learning and exploring new
-              technologies, so be sure to check back often for new content!
+              languages. I'm always learning and exploring new
+              technologies.
             </p>
 
             <p>
-              We encourage you to leave comments on our posts and engage with
+              We encourage you to leave comments on my posts and engage with
               other readers. You can like other people's comments and reply to
               them as well. We believe that a community of learners can help
               each other grow and improve.

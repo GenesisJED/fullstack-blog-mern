@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import CallToAction from '../components/CallToAction';
 import { useEffect, useState } from 'react';
 import PostCard from '../components/PostCard';
 import banner from '../assets/images/banner2.jpg';
@@ -18,7 +17,7 @@ export const Home = () => {
   }, []);
   return (
     <div>
-      <div className='flex flex-col sm:flex-row p-3 border border-teal-500 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
+      <div className='flex flex-col sm:flex-row p-3 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
         <div className="p-7 flex-1">
           <img src={banner} />
         </div>
