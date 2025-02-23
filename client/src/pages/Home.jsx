@@ -19,17 +19,17 @@ export const Home = () => {
     <div>
       <div className='flex flex-col sm:flex-row p-3 justify-center items-center rounded-tl-3xl rounded-br-3xl text-center'>
         <div className="p-7 flex-1">
-          <img src={banner} />
+          <img src={banner} className="w-200 h-200" alt="Banner Image"/>
         </div>
       </div>
-      <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto '>
-        <h1 className='text-3xl font-bold lg:text-6xl'>Welcome to my Blog</h1>
-        <p className='text-gray-500 text-xs sm:text-sm'>
-        This is the place to explore a diverse collection of articles and tutorials covering subjects like web development, software engineering, and various programming languages.
+      <div className='flex flex-col gap-6 p-2 sm:p-20 px-3 max-w-6xl mx-auto '>
+        <h1 className='text-3xl font-bold lg:text-6xl text-center'>Welcome to my Blog</h1>
+        <p className='text-gray-500 text-xs sm:text-lg text-center'>
+          This blog is a collaborative space where I share my learnings and experiences as a web developer, and I invite you to join the conversation. Create your account and share your knowledge too!
         </p>
         <Link
           to='/search'
-          className='text-xs sm:text-sm text-teal-500 font-bold hover:underline'
+          className='text-xs text-center sm:text-sm text-teal-500 font-bold hover:underline'
         >
           View all posts
         </Link>
