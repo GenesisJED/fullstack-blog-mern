@@ -6,10 +6,7 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate, useParams } from "react-router-dom";
-import { getImagesSupabase } from '../helpers/getImagesSupabase';
 import { useSelector } from 'react-redux';
-
-const { supabase, CDNURL } = getImagesSupabase();
 
 export const UpdatePost = () => {
     const [file, setFile] = useState(null);
@@ -148,7 +145,7 @@ export const UpdatePost = () => {
                 {imageUploadError && <Alert color='failure'>{imageUploadError}</Alert>}
                 {formData.image && (
                     <img
-                        src={CDNURL + formData.image}
+                        src={formData.image}
                         alt='upload'
                         className='w-full h-72 object-cover'
                     />

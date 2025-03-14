@@ -1,14 +1,11 @@
 import { Link } from 'react-router-dom';
-import { getImagesSupabase } from '../helpers/getImagesSupabase';
-
-const { CDNURL } = getImagesSupabase();
 
 export default function PostCard({ post }) {
   return (
     <div className='group relative w-full hover:border-2 h-[400px] overflow-hidden rounded-lg lg:w-[360px] transition-all'>
       <Link to={`/post/${post.slug}`}>
         <img
-          src={CDNURL + post.image}
+          src={post.image}
           alt='post cover'
           className='h-[260px] w-full object-cover group-hover:h-[200px] transition-all duration-300 z-20'
         />

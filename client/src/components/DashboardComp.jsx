@@ -8,9 +8,6 @@ import {
 } from 'react-icons/hi';
 import { Button, Table } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-import { getImagesSupabase } from '../helpers/getImagesSupabase';
-
-const { CDNURL } = getImagesSupabase();
 
 export const DashboardComp = () => {
     const [users, setUsers] = useState([]);
@@ -197,7 +194,7 @@ export const DashboardComp = () => {
                   <Table.Row className='bg-white dark:border-gray-700 dark:bg-gray-800'>
                     <Table.Cell>
                       <img
-                        src={ CDNURL +post.image }
+                        src={ post.image }
                         alt='user'
                         className='w-14 h-10 rounded-md bg-gray-500'
                       />

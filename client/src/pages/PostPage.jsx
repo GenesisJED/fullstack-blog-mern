@@ -1,16 +1,13 @@
 import { Button, Spinner } from 'flowbite-react';
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { getImagesSupabase } from '../helpers/getImagesSupabase';
 import { CommentSection } from '../components/CommentSection';
 import PostCard from '../components/PostCard';
-
-const { CDNURL } = getImagesSupabase();
 
 export const PostPage = () => {
     const { postSlug } = useParams();
     const [ loading, setLoading ] = useState(true);
-    const [ error, setError ] = useState(false);
+    const [ setError ] = useState(false);
     const [ post, setPost ] = useState(null);
     const [recentPosts, setRecentPosts] = useState(null);
 
@@ -74,7 +71,7 @@ export const PostPage = () => {
         </Button>
       </Link>
       <img
-        src={post && CDNURL + post.image}
+        src={post && post.image}
         alt={post && post.title}
         className='mt-10 p-3 rounded-lg max-h-[600px] w-full object-cover'
       />

@@ -3,9 +3,6 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
-import { getImagesSupabase } from '../helpers/getImagesSupabase';
-
-const { CDNURL } = getImagesSupabase();
 
 export const DashPosts = () => {
   const { currentUser } = useSelector((state) => state.user);
@@ -98,7 +95,7 @@ export const DashPosts = () => {
                   <Table.Cell>
                     <Link to={`/post/${post.slug}`}>
                       <img
-                        src={CDNURL + post.image}
+                        src={post.image}
                         alt={post.title}
                         className='w-20 h-10 object-cover bg-gray-500'
                       />
