@@ -23,7 +23,7 @@ export const Home = () => {
           <img src={banner} className="w-full" alt="Banner Image" />
         </div>
       </div>
-      <div className='flex flex-col gap-6 p-2 sm:p-20 px-3 max-w-6xl mx-auto '>
+      <div className='flex flex-col gap-6 p-10 sm:p-20 px-3 max-w-6xl mx-auto '>
         <h1 className='text-3xl font-bold lg:text-5xl text-center'>Welcome to my Blog</h1>
         <p className='text-gray-500 text-xs sm:text-lg text-center'>
           This blog is a collaborative space where I share my learnings and experiences as a web developer, and I invite you to join the conversation. Create your account and share your knowledge too!
